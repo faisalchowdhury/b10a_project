@@ -32,6 +32,12 @@ nav {
     border-radius: 5px;
     background:#0D1321;
     color: #fff;
+    border:none;
+    transition: .5s;
+}
+.btn:hover {
+   background: rgb(233, 233, 233);
+   color: black;
 }
 
 /* Hero section */
@@ -61,23 +67,163 @@ nav {
     width: 1000px;
     margin: 50px auto;
     text-align: center;
+    background-color: #fbe1e1;
+    padding: 100px 50px;
+    border-radius: 10px;
 }
 
-.html_box {
+.box1,.box2,.box3 {
     display : flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
    
 }
-.html_left {
+.box_left,.box3_left {
     text-align: start;
     width: 40%;
 }
-.html_box h3,p,button {
+.box_left,.box3_left h3,p,button {
     margin-bottom: 15px;
   
 }
-.html_box h3 {
-    font-weight: 500;
+
+.box2_right {
+    text-align: start;
+    width: 40%;
+}
+
+.inspiration {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.inspiration iframe {
+    border-radius: 10px;
+}
+/* Current target */
+
+.current_target {
+    width: 1000px;
+    margin: 50px auto;
+    
+}
+.current_target > h2,.current_target > p {
+    text-align: center;
+}
+
+.target_wrap {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.target_item {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 50px 0 #ddd;
+}
+
+.target_item:hover {
+    box-shadow: 0 6px 50px 0 #bebebe;
+}
+
+.target_html {
+    background: rgba(255, 76, 30, 0.05);
+    
+}
+.target_css {
+   background: rgba(0, 76, 232, 0.05);
+}
+.target_js {
+   background: rgba(255, 223, 0, 0.05);
+}
+
+/* Target */
+
+.target {
+    width:1000px;
+    margin: 50px auto;
+}
+.target > h2,.target > p {
+    text-align: center;
+}
+.skill {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 700px;
+    box-shadow: 0 6px 50px 0 #ddd;
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+.skill_img img {
+    width: 100px;
+}
+
+/* Support  */
+
+.support {
+    width: 1000px;
+    margin: 50px auto;
+    height: 300px;
+    background: url('../assets/handshake.jpg');
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: white;
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.support_wrap {
+    width: 500px;
+}
+.support_wrap input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    border: none;
+
+}
+.support_wrap input[type="submit"] {
+    width: 24%;
+    padding: 10px;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer {
+    background: #ddd;
+}
+.footer_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
